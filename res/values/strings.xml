@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, AngryBirdsWallpaperProActivity!</string>
+    <string name="app_name">Dragon Ball Live Wallpaper</string>
+    <string name="widget_text">Hello Widget!</string>  
+    <string name="bemvindos">Welcome to Dragon Ball Live Wallpaper! What is your name?</string>
+    <string name="rules">Welcome to Dragon ball quiz. It is based on a series of multiple choice type questions with four options and only one where correct. 20 questions are where the end of the quiz will be given your result. Enjoy it.</string>
+    <string-array name="dificuldade">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Ninja</item>      
+    </string-array>
+</resources>

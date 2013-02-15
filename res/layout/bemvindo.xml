@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/w1">
+	<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/scrollView1">
+		<LinearLayout android:id="@+id/linearLayout7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="fill_parent" android:id="@+id/linearLayout2" android:gravity="center" android:paddingBottom="10dp">
+				<LinearLayout android:layout_height="wrap_content" android:paddingBottom="10dp" android:gravity="center" android:layout_width="fill_parent" android:orientation="vertical" android:id="@+id/linearLayout1" android:paddingTop="5dp">
+					<ImageView android:layout_height="wrap_content" android:src="@drawable/logo" android:layout_width="wrap_content" android:id="@+id/logoinspiration"></ImageView>
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical" android:paddingTop="5dp" android:background="@drawable/hello" android:id="@+id/hello_layout" android:layout_width="360dp" android:layout_height="wrap_content">
+
+					<TextView
+					    android:id="@+id/hello"
+					    android:layout_width="350dp"
+					    android:layout_height="200dp"
+					    android:paddingLeft="40dp"
+					    android:paddingRight="30dp"
+					    android:paddingTop="55dp"
+					    android:text="@string/bemvindos"
+					    android:textColor="@color/blue_qcon"
+					    android:textSize="20dp" >
+
+</TextView>
+				</LinearLayout>
+				<LinearLayout android:paddingLeft="5dp" android:layout_height="wrap_content" android:paddingRight="5dp" android:layout_width="fill_parent" android:orientation="horizontal" android:paddingTop="10dp" android:id="@+id/name_layout">
+
+					<TextView
+					    android:id="@+id/TextView01"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:paddingLeft="10dp"
+					    android:paddingRight="10dp"
+					    android:text="Your name:"
+					    android:textColor="@color/branco"
+					    android:textSize="22dp" >
+</TextView>
+					<EditText android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/nome" android:layout_width="wrap_content">
+						<requestFocus></requestFocus>
+					</EditText>
+				</LinearLayout>
+				<LinearLayout android:layout_height="wrap_content" android:gravity="center" android:layout_width="fill_parent" android:orientation="vertical" android:id="@+id/passaro_layout">
+					<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout4" android:gravity="center">
+						<LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout9" android:orientation="vertical" android:layout_width="25dp"></LinearLayout>
+						<LinearLayout android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal" android:id="@+id/linearLayout3" android:layout_width="wrap_content">
+							<Button android:layout_height="wrap_content" android:id="@+id/go" android:layout_width="wrap_content" android:background="@drawable/button_ok_xml"></Button>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

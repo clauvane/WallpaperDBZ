@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/w1">
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/fundo_actionbar"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <LinearLayout android:layout_width="wrap_content" android:id="@+id/LinearLayout02" android:gravity="center" android:layout_height="fill_parent" android:paddingLeft="5dp">
+
+            <Button
+                android:id="@+id/actionbar_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionbar_voltar_xml" />
+
+            <ImageView
+                android:id="@+id/logo_principal"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:src="@drawable/w1" >
+</ImageView>
+            <TextView android:layout_width="150dp" android:shadowDy="1.0" android:shadowRadius="3.0" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:shadowColor="#555555" android:paddingLeft="5dp" android:id="@+id/titulo" android:shadowDx="1.0" android:text="Support" android:textSize="24dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+	<ScrollView android:id="@+id/scrollView1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/linearLayout2"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:gravity="center" android:padding="10dp">
+			<TextView android:layout_height="wrap_content" android:textColor="#686868" android:paddingRight="10dp" android:id="@+id/textoIntro" android:layout_width="wrap_content" android:paddingLeft="10dp" android:text="Send us a text message, will return soon!"></TextView>
+			<ScrollView android:layout_height="wrap_content" android:id="@+id/ScrollView01" android:layout_width="fill_parent">
+				<LinearLayout android:orientation="vertical" android:id="@+id/linearLayout5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+					<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/LinearLayout01" android:layout_width="fill_parent" android:paddingTop="10dp" android:paddingLeft="5dp" android:paddingRight="5dp">
+						<TextView android:layout_height="wrap_content" android:textColor="#686868" android:paddingRight="10dp" android:id="@+id/TextView01" android:layout_width="wrap_content" android:paddingLeft="10dp" android:text="Name:"></TextView>
+						<EditText android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/nome" android:layout_width="wrap_content">
+							<requestFocus></requestFocus>
+						</EditText>
+					</LinearLayout>
+					<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/LinearLayout03" android:layout_width="fill_parent" android:paddingTop="10dp" android:paddingLeft="5dp" android:weightSum="1" android:paddingRight="5dp">
+						<TextView android:layout_height="wrap_content" android:textColor="#686868" android:paddingRight="10dp" android:id="@+id/TextView03" android:layout_width="wrap_content" android:paddingLeft="10dp" android:text="Message:"></TextView>
+						<EditText android:layout_height="124dp" android:layout_weight="1" android:id="@+id/mensagem" android:inputType="textMultiLine" android:layout_width="fill_parent"></EditText>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+			<LinearLayout android:layout_height="wrap_content" android:gravity="right" android:orientation="vertical" android:id="@+id/linearLayout4" android:layout_width="fill_parent">
+				<Button android:paddingBottom="5dp" android:layout_height="wrap_content" android:id="@+id/enviar" android:paddingRight="5dp" android:layout_width="wrap_content" android:background="@drawable/enviar_button"></Button>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

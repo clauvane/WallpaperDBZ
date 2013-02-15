@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clauvaneandroid.wallpaperdbz"
+    android:versionCode="3"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="16" />
+    
+    <!-- Usados para a aplicativo. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+<!--     <uses-feature android:name="android.hardware.camera" /> -->
+
+<!--     <uses-permission android:name="android.permission.CAMERA" /> -->
+<!--     <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+
+<!--     <uses-feature android:name="android.hardware.camera.autofocus" /> -->
+
+    <!-- Required permissions for all ads. This will apply for all ads. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+<!--     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Additional required permission for push notification. Apply only for push notification ad. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Required permission for Icon Ad. Apply only for icon ad. -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <!-- Optional Permissions for push notification, But recommended for high revenue -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Optional permissions -->
+<!--     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+<!--     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+<!--     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+<!--     <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+<!--     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> -->
+<!--     <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+
+    <application
+        android:icon="@drawable/icone"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" 
+        android:name="com.clauvaneandroid.wallpaperdbz.quiz.ChuckApplication"	>
+        <activity
+            android:name="com.clauvaneandroid.wallpaperdbz.menu.Dashboard"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.clauvaneandroid.wallpaperdbz.menu.Bemvindo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.clauvaneandroid.wallpaperdbz.wallpaper.WallpaperAmpliado"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.clauvaneandroid.wallpaperdbz.contato.Contato"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>       
+        <activity
+            android:name="com.delx.chat.ListarSalas"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>  
+        <activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.wallpaper.ListarWallpapers"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>          
+        <activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.puzzle.SliderPuzzleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>  
+        <activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.puzzle.ListarPuzzles"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+        
+        <!-- Start activity for quiz -->
+        <activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.quiz.QuestionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+		<activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.quiz.RulesActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.quiz.EndgameActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.quiz.SettingsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.quiz.AnswersActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <activity 
+            android:name="com.clauvaneandroid.wallpaperdbz.quiz.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+
+        <activity android:name="com.google.ads.AdActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <!-- Start required declaration for all ads -->
+
+        <meta-data
+            android:name="com.airpush.android.APPID"
+            android:value="89014" />
+        <meta-data
+            android:name="com.airpush.android.APIKEY"
+            android:value="apikey*1353505962124842972" />
+
+        <!-- This activity is required for all ads. -->
+        <activity
+            android:name="com.airpush.android.OptinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- End of the required declaration -->
+        <!-- Start declaration for push notification ads. -->
+        <service
+            android:name="com.airpush.android.PushService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.airpush.android.BootReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <!-- End declaration for push notification ads. -->
+        <!-- Add this activity for Smart wall ads.. -->
+
+        <activity
+            android:name="com.airpush.android.SmartWallActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" />
+
+        <!-- End of Airpush Manifest declaration -->
+    </application>
+
+</manifest>
